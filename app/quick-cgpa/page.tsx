@@ -3,7 +3,6 @@
 import type React from "react";
 
 import { useState } from "react";
-import Image from "next/image";
 import Top from "../components/top/Top";
 
 export default function QuickCGPAPage() {

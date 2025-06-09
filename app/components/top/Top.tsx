@@ -1,11 +1,11 @@
 import backGround from "@/app/assets/imgs/top.png";
 
-interface Props{
-    heading?:String
-    subHeading?:String
+interface Props {
+  heading?: string;
+  subHeading?: string;
 }
 
-const Top = ({heading, subHeading}:Props) => {
+const Top = ({ heading, subHeading }: Props) => {
   return (
     <div className="">
       <div
@@ -13,9 +13,7 @@ const Top = ({heading, subHeading}:Props) => {
         style={{ backgroundImage: `url(${backGround.src})` }}
       >
         <p className="font-bold text-3xl">{heading}</p>
-        <p className="text-sm">
-          {subHeading}
-        </p>
+        <p className="text-sm">{subHeading}</p>
       </div>
     </div>
   );

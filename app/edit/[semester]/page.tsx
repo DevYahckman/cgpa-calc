@@ -4,7 +4,7 @@ import type React from "react"
 import { useState, useEffect } from "react"
 import { useRouter, useParams } from "next/navigation"
 import Image from "next/image"
-// import GradingScale from "@/components/grading-scale"
+
 
 interface Course {
   name: string

@@ -2,10 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Top from "../components/top/Top";
-import resultsImage from '@/app/assets/imgs/rest.jpg'
+
 
 interface Course {
   name: string;
@@ -48,6 +47,7 @@ export default function ResultsPage() {
     localStorage.setItem("semesterResults", JSON.stringify(updatedResults));
     setEditingSemester(null);
   };
+  
 
   const getGradeFromScore = (score: number) => {
     if (score >= 70) return "A";
@@ -89,6 +89,7 @@ export default function ResultsPage() {
     };
     return gradePoints[grade.toUpperCase()] || 0;
   };
+  console.log(handleSave, editingSemester, getGradePoint);
 
   return (
     <div>
